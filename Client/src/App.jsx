@@ -10,6 +10,9 @@ import { UserContextProvider } from "./UserContext.jsx";
 import ProfilePage from "./ProfilePage.jsx";
 import PlacesPage from "./Pages/PlacesPage.jsx";
 import PlacesFormPage from "./Pages/PlacesFormPage.jsx";
+import PlacePage from "./Pages/PlacePage.jsx";
+import BookingPage from "./Pages/BookingPage.jsx";
+import BookingsPage from "./Pages/BookingsPage.jsx";
 
 
 
@@ -28,6 +31,9 @@ function App() {
           <Route path="/account/places" element={<PlacesPage/>} />
           <Route path="/account/places/new" element={<PlacesFormPage/>} />
           <Route path="/account/places/:id" element={<PlacesFormPage/>} />
+          <Route path="/account/bookings" element={<BookingsPage />} />
+          <Route path="/account/bookings/:id" element={<BookingPage />} />
+          <Route path="/place/:id" element={<PlacePage/>}/>
           
         </Route>
       </Routes>
