@@ -48,7 +48,7 @@ export default function PlaceGallery({place}) {
                 <img
                   onClick={() => setShowAllPhotos(true)}
                   className=" object-cover aspect-square cursor-pointer"
-                  src={"http://localhost:4000/uploads/" + place.photos?.[0]}
+                  src={"https://airbnb-1i6s.onrender.com/uploads/" + place.photos?.[0]}
                   alt=""
                 />
               </div>
@@ -59,7 +59,7 @@ export default function PlaceGallery({place}) {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className=" object-cover aspect-square cursor-pointer"
-                src={"http://localhost:4000/uploads/" + place.photos?.[1]}
+                src={"https://airbnb-1i6s.onrender.com/uploads/" + place.photos?.[1]}
                 alt=""
               />
             )}
@@ -68,7 +68,7 @@ export default function PlaceGallery({place}) {
                 <img
                   onClick={() => setShowAllPhotos(true)}
                   className=" object-cover aspect-square relative top-2 cursor-pointer"
-                  src={"http://localhost:4000/uploads/" + place.photos?.[2]}
+                  src={"https://airbnb-1i6s.onrender.com/uploads/" + place.photos?.[2]}
                   alt=""
                 />
               )}
