@@ -23,7 +23,7 @@ app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(
   cors({
     credentials: true,
-    origin: "https://airbnb-client-two.vercel.app/",
+    origin: "https://airbnb-client-two.vercel.app",
   })
 );
 
