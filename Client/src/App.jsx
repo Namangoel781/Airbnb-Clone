@@ -16,7 +16,7 @@ import BookingsPage from "./Pages/BookingsPage.jsx";
 
 
 
-axios.defaults.baseURL = "https://airbnb-theta-nine.vercel.app/";
+axios.defaults.baseURL = "https://airbnb-1i6s.onrender.com";
 axios.defaults.withCredentials = true;
 function App() {
 
