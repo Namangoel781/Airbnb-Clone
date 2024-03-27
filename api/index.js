@@ -26,6 +26,11 @@ app.use(
     origin: "http://localhost:5173",
   })
 );
+app.use(cors({
+  origin: ["https://deploy-mern-1whq.vercel.app"],
+  methods: ["POST", "GET"],
+  credentials: true
+}))
 
 mongoose.connect(process.env.MONGO_URL);
 
@@ -247,4 +252,6 @@ app.get('/bookings', async (req,res) => {
  res.json( await Booking.find({user:userData.id}).populate('place'))
 })
 
-app.listen(4000);
+const PORT = process.env.PORT || 4000
+
+app.listen(PORT);
